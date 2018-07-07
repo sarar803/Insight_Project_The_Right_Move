@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Is this the apartment for me?",
+	"description": "Predict noise, heat, and elevator problems at NYC apartments",
+	"version": "1.0",
+	"author": "sara rasmussen",
+
+	"background": {
+		"scripts": ["popup.html"],
+		"persistent": true
+	},
+
+	"permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/"
+    ],
+	"browser_action": {
+		"default_icon": "logo.png",
+		"default_popup": "popup.html"
+	}
+}
